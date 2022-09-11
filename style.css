@@ -1,0 +1,1229 @@
+    body {
+        /* background:url('../../paper-cut-abstract-background-3d-clean-violet-carving-art-paper-craft-colorful-waves-minimalistic-modern-design-business-presentations.jpg') ; */
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: .8s ease all;
+
+    }
+
+    .header {
+        height: 100%;
+        width: 100%;
+        background: url('../../paper-cut-abstract-background-3d-clean-violet-carving-art-paper-craft-colorful-waves-minimalistic-modern-design-business-presentations.jpg');
+        background-size: cover;
+        box-shadow: 1px 2px 8px 2px #8c4efd;
+
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-right: 34px; */
+    }
+
+    .nav {
+        margin-right: 32px;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        /* color: white; */
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        padding: 13px 34px;
+        color: rgb(190, 43, 190);
+        font-family: fangsong;
+        letter-spacing: 2px;
+        /* height: 23px; */
+        border-radius: 47px 0px;
+    }
+
+    .nav-links li a:hover {
+        background-color: black;
+        transition: .5s ease-in-out;
+    }
+
+    /* .nav-links li a:hover{
+        color: rgb(211, 77, 238);
+    
+    } */
+    .logo img {
+        width: 162px;
+        /* margin: ; */
+        /* border: 3; */
+        /* border: 3px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myimg {
+        width: 468px;
+        /* border: 2px solid; */
+        height: 587px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: mypic;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+
+    .myimg img {
+        width: 291px;
+        /* border: 2px solid; */
+        height: 580px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tooglebtn {
+        /* border: 2px solid; */
+        width: 68px;
+        height: 55px;
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+
+    }
+
+    .span1 {
+        width: 43px;
+        border: 3px solid deeppink;
+        display: flex;
+        height: 4px;
+        border-radius: 114px;
+        /* padding: 0px; */
+        /* background-color: pink; */
+        /* padding: 3px 0px; */
+        margin: 4px;
+    }
+
+    @media (max-width:950px) {
+        .nav {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            /* display: flex; */
+            /* flex-direction: column; */
+            border: 3px solid;
+            height: 246px;
+            top: 96px;
+            width: 100%;
+            margin-right: 32px;
+            z-index: 4;
+            background-color: #341e60;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            /* color: white; */
+            flex-direction: column;
+            /* margin: 14px 0px; */
+        }
+
+        .nav-links li {
+            width: 100%;
+            /* margin: 15px 0px; */
+            padding: 15px 0px;
+        }
+
+        .tooglebtn {
+            /* display: flex; */
+            display: flex;
+            position: absolute;
+            right: 17px;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .myimg {
+            width: 100%;
+        }
+
+        .left-header {
+            flex-wrap: wrap;
+
+        }
+
+        .nav.active {
+            display: flex;
+        }
+
+
+    }
+
+    .left-header {
+        display: flex;
+        /* border: 2px solid; */
+    }
+
+    .intro {
+        width: 100%;
+        /* border: 2px solid greenyellow; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        animation-name: intro;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+
+    .intro h3 {
+        color: mediumpurple;
+        font-size: 37px;
+    }
+
+    .intro h1 {
+        font-size: 50px;
+        color: mediumpurple;
+    }
+
+    .intro h1:hover {
+        font-size: 60px;
+        transition: .3s;
+        color: white;
+        /* color: mediumpurple; */
+    }
+
+    .intro h3:hover {
+        font-size: 45px;
+        transition: .3s;
+        color: white;
+        /* color: mediumpurple; */
+    }
+
+    .intro h5:hover {
+        font-size: 40px;
+        transition: .3s;
+        color: white;
+        /* color: mediumpurple; */
+    }
+
+    .intro h5 {
+        font-size: 31px;
+        color: #874ce5;
+    }
+
+    @keyframes intro {
+        0% {
+            transform: rotateY(90deg);
+        }
+
+        50% {
+            transform: rotateY(180deg);
+        }
+
+        75% {
+            transform: rotateY(270deg);
+        }
+
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
+    @keyframes mypic {
+        0% {
+            transform: translatex(-100%);
+        }
+
+        50% {
+            transform: translatex(0%);
+        }
+
+        75% {
+            transform: translatex(50%);
+        }
+
+        100% {
+            transform: translatex(-3%);
+        }
+
+    }
+
+    @media (max-width:670px) {
+        .intro h1 {
+            font-size: 30px;
+        }
+
+        .intro h3 {
+            font-size: 25px;
+        }
+
+        .intro h5 {
+            font-size: 20px;
+        }
+
+        .myimg {
+            width: 100%;
+
+        }
+    }
+
+    /* .about-section{
+         background:url('../../paper-cut-abstract-background-3d-clean-violet-carving-art-paper-craft-colorful-waves-minimalistic-modern-design-business-presentations.jpg') ;
+        background-size:contain ; 
+    } */
+    .about-section h1 {
+        font-size: 71px;
+        text-align: center;
+        color: purple;
+        padding-top: 100px;
+        margin-bottom: 76px;
+
+        letter-spacing: 12px;
+        font-family: fantasy;
+    }
+
+    .about-section h1:hover {
+        font-size: 85px;
+        color: black;
+    }
+
+    .about-section {
+        height: 168vh;
+    }
+
+    .about {
+        width: 100%;
+        /* border: 2px solid; */
+        display: flex;
+        /* height: 160vh; */
+        padding: 25px;
+    }
+
+    .left-about {
+        width: 109%;
+        padding: 0px;
+        /* border: 2px solid; */
+        border-radius: 0px 145px;
+        background-color: #8a4dfd;
+        box-shadow: 2px 2px 2px 2px #8a4dfd;
+        /* box-shadow-left: 75px blue; */
+    }
+
+    .left-about h5 {
+        font-family: fangsong;
+        letter-spacing: 25px;
+        /* border: 2px solid; */
+        width: 306px;
+        width: 100%;
+        padding-left: 42px;
+        /* 0px: ; */
+        padding-top: 49px;
+        font-size: 45px;
+        color: #250c5e;
+        text-align: center;
+    }
+
+    .left-about p {
+        font-size: 22px;
+        /* border: 2px solid; */
+        width: 100%;
+        color: white;
+        padding: 70px;
+        padding-top: 20px;
+        text-align: start;
+        font-family: fangsong;
+    }
+
+    .center-about {
+        width: 59%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: url(../../new/Particle-light-abstract-bg.jpg); */
+        background-size: cover;
+        padding: -55px;
+        margin: -23px;
+        background-blend-mode: 0 0 0 0.4 darken;
+        background-attachment: fixed;
+    }
+
+    .center-about button {
+        margin-top: 51px;
+        font-size: 22px;
+        font-family: fangsong;
+        background-color: #8a4dfd;
+        padding: 14px;
+        border: none;
+        border-radius: 129px 6px;
+    }
+
+    .myimg2 {
+        /* border: 44px solid; */
+        /* border: 2px solid; */
+        /* width: 50%; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* text-align: center; */
+        /* background-color: violet; */
+        color: #7767b9;
+        border-radius: 129px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center-about button:hover {
+        color: aliceblue;
+        border-radius: 6px 129px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .myimg2 img {
+        width: 165px;
+        border-radius: 133px;
+    }
+
+    .myimg2 img:hover {
+        animation-name: myimg2;
+        animation-duration: 3s;
+        transition: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes myimg2 {
+
+        /* 0%{transform:rotate(0deg);}         */
+        /* 25%{transform:rotate(90deg);}        
+        50%{transform:rotate(180deg);}        
+        75%{transform:rotate(270deg);}         */
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .right-about {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        font-family: fangsong;
+        font-size: 14px;
+        width: 110%;
+        /* border: 2px solid; */
+        width: 109%;
+        padding: 0px;
+        /* border: 2px solid; */
+        border-radius: 167px 0px;
+        background-color: #8a4dfd;
+        box-shadow: 2px 2px 2px 2px #8a4dfd;
+    }
+
+    .right-about h2 {
+        margin: 15px 0px;
+        margin-left: 43px;
+    }
+
+    .right-about a {
+        text-decoration: none;
+    }
+
+    .right-about a:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    .btn1 {
+        MARGIN-TOP: 25PX;
+        FONT-SIZE: 22PX;
+        PADDING: 9PX;
+        FONT-FAMILY: FANGSONG;
+        BORDER-RADIUS: 49PX 0PX;
+        BACKGROUND-COLOR: #432097;
+        COLOR: #8a4efe;
+        WIDTH: 176PX;
+    }
+
+    .btn1:hover {
+        WIDTH: 190PX;
+        color: aliceblue;
+        background-color: black;
+        font-size: 26px;
+        animation-name: btn1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes btn1 {
+        0% {
+            border-left: 2px solid #874ce5;
+        }
+
+        25% {
+            border-top: 10px solid #874ce5;
+        }
+
+        50% {
+            border-right: 2px solid #874ce5;
+        }
+
+        75% {
+            border-bottom: 10px solid #874ce5;
+        }
+
+        /* 100%{ border-left: 10px solid #874ce5 ;} */
+
+    }
+
+    .bottom-about img {
+        width: 50px;
+    }
+
+    .bottom {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        height: 15%;
+        /* border: 2px solid; */
+        margin-top: 23px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .bottom li a {
+        margin: 31px 51px;
+        padding: 23px;
+    }
+
+    .bottom img:hover {
+        width: 75px;
+    }
+
+    .bottom-about2 {
+        background-color: #8a4dfd;
+        margin-top: 75px;
+        margin: 103px 34px;
+        padding: 52px;
+        font-family: fangsong;
+        color: aliceblue;
+        border-radius: 29px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bottom-about2 p {
+        font-size: 25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bottom-about2 span:hover {
+        color: black;
+
+    }
+
+    .about-section {
+        background: url('../../new/abstract-blur-gradient-background-with-trending-pastel-pink-purple-purple-red-orange-yellow-and-blue-colors-for-approval-concept-wallpaper-web-presentation-and-prints-illustration-fre.jpg');
+        background-size: cover;
+    }
+
+    .service-section {
+        /* background: url(../../new/9.webp); */
+        background-size: cover;
+        padding-top: 92px;
+        padding-bottom: 36px;
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(59, 29, 253, 0.9864320728291317) 50%, rgba(69, 159, 252, 0.8267682072829132) 91%);
+    }
+
+    .service-section h2 {
+        text-align: center;
+        font-size: 62px;
+        font-family: fantasy;
+        letter-spacing: 8px;
+        color: purple;
+        padding-bottom: 35px;
+    }
+
+    .service-section h2:hover {
+        font-size: 70px;
+        color: black;
+    }
+
+    .service-box1 img {
+        width: 146px;
+        /* border: 2px solid; */
+    }
+
+    .service-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+        flex-wrap: wrap;
+    }
+
+    .service-box1 {
+        border: 3px solid;
+        width: 254px;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 133px 19px;
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .service-box1:hover {
+        background-color: #8a4dfd;
+        background-blend-mode: darken;
+        background: 0px 0px 0px 0.5px black;
+        border: none;
+        background-blend-mode: darken;
+
+    }
+
+    .service-box1 h1 {
+        /* opacity: 0; */
+        font-size: 16px;
+        letter-spacing: inherit;
+        opacity: 1;
+        font-family: fangsong;
+    }
+
+    .project-section {
+        padding-top: 89px;
+        padding-bottom: 80px;
+        background: url('../../new/pink-purple-and-blue-backgroundsandroid-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-s4vjz.jpg');
+        background-size: cover;
+    }
+
+    .Project-section h1 {
+        text-align: center;
+        font-size: 62px;
+        font-family: fantasy;
+        letter-spacing: 8px;
+        color: purple;
+        padding-bottom: 77px;
+    }
+
+    .project-section h1:hover {
+        font-size: 70px;
+        color: black;
+    }
+
+    .pj-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+        flex-wrap: wrap;
+    }
+
+    .project-box1 {
+        border: 3px solid;
+        width: 254px;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 133px 19px;
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .project-box1 :hover {
+        background-color: #8a4dfd;
+        background-blend-mode: darken;
+        background: 0px 0px 0px 0.5px black;
+        border: none;
+        background-blend-mode: darken;
+
+    }
+
+    .project-box1 h3 {
+        opacity: 0;
+        font-size: 16px;
+        letter-spacing: inherit;
+        /* opacity: 1; */
+        font-family: fangsong;
+    }
+
+    .Project-section h1 {
+        text-align: center;
+        font-size: 62px;
+        font-family: fantasy;
+        letter-spacing: 8px;
+        color: purple;
+    }
+
+    .project-section h1:hover {
+        font-size: 70px;
+        color: black;
+    }
+
+    .pj1 {
+        background-image: url('../../new/online-education-website-template.jpg');
+        background-size: cover;
+
+    }
+
+    .pj1:hover {
+        background-image: (0px, 0px, 0px, 1px);
+        background-blend-mode: darken;
+        background-color: #9c27b0;
+        color: antiquewhite;
+        font-size: 44px;
+        opacity: 1;
+    }
+
+    .pj1 h3:hover {
+        font-size: 33px;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .pj2 {
+        background-image: url('../../new/digital-agency-website-template.jpg');
+        background-size: cover;
+
+    }
+
+    .pj2:hover {
+        background-image: (0px, 0px, 0px, 1px);
+        background-blend-mode: darken;
+        background-color: #9c27b0;
+        color: antiquewhite;
+        font-size: 44px;
+        opacity: 1;
+    }
+
+    .pj2 h3:hover {
+        font-size: 33px;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .pj3 {
+        background-image: url('../../new/images.jpg');
+        background-size: cover;
+
+    }
+
+    .pj3:hover {
+        background-image: (0px, 0px, 0px, 1px);
+        background-blend-mode: darken;
+        background-color: #9c27b0;
+        color: antiquewhite;
+        font-size: 44px;
+        opacity: 1;
+    }
+
+    .pj3 h3:hover {
+        font-size: 33px;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .pj4 {
+        background-image: url('../../new/2f9f4e_9c1fffc643084747a1ac779421d10616_mv2.jpg');
+        background-size: cover;
+
+    }
+
+    .pj4:hover {
+        background-image: (0px, 0px, 0px, 1px);
+        background-blend-mode: darken;
+        background-color: #9c27b0;
+        color: antiquewhite;
+        font-size: 44px;
+        opacity: 1;
+    }
+
+    .pj4 h3:hover {
+        font-size: 33px;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .pj5 {
+        background-image: url('../../new/img_17030507350.jpg');
+        background-size: cover;
+
+    }
+
+    .pj5:hover {
+        background-image: (0px, 0px, 0px, 1px);
+        background-blend-mode: darken;
+        background-color: #9c27b0;
+        color: antiquewhite;
+        font-size: 44px;
+        opacity: 1;
+    }
+
+    .pj5 h3:hover {
+        font-size: 33px;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .pj6 {
+        background-image: url('../../new/Woollen-small.jpg');
+        background-size: cover;
+
+    }
+
+    .pj6:hover {
+        background-image: (0px, 0px, 0px, 1px);
+        background-blend-mode: darken;
+        background-color: #9c27b0;
+        color: antiquewhite;
+        font-size: 44px;
+        opacity: 1;
+    }
+
+    .pj6 h3:hover {
+        font-size: 33px;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .btn-service {
+        /* border: 3px solid; */
+        height: 132px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-service button {
+        height: 47px;
+        width: 117px;
+        border-radius: 23px 0px;
+        /* background: white; */
+    }
+
+    .btn-service button:hover {
+        border: none;
+        background-color: #874ce5;
+        color: white;
+        font-size: 21px;
+        font-family: fangsong;
+    }
+
+    .contact-section {
+        background: url("../../new/purple-lavender-color-background-free-vector.jpg");
+        background-size: cover;
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-me-table {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 2px solid; */
+        width: 48vw;
+        padding: 27px;
+        margin: 41px;
+
+    }
+
+    .contact-me-table input {
+        background-color: #8356e7;
+        /* border-left: none; */
+        height: 34px;
+        font-size: 27px;
+        font-family: fangsong;
+        /* border: none; */
+        border-bottom: 50px;
+        border: 2px solid;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        margin: 12px 0px;
+    }
+
+    .MASSGE {
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contact-section h1 {
+        text-align: center;
+        font-size: 62px;
+        font-family: fantasy;
+        letter-spacing: 8px;
+        color: purple;
+        padding: 70px;
+        margin-top: 57px;
+    }
+
+    .contact-section h1:hover {
+        font-size: 70px;
+        color: black;
+    }
+
+    .last-btn {
+        width: 100%;
+        /* border: 2px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+
+    .last-btn button {
+        HEIGHT: 40PX;
+        DISPLAY: flex;
+        JUSTIFY-CONTENT: center;
+        ALIGN-ITEMS: center;
+        border-radius: 72px 2px;
+        WIDTH: 135PX;
+        BACKGROUND-COLOR: #9c76ef;
+        font-size: 20px;
+        font-family: fangsong;
+        border: none;
+    }
+
+    .last-btn button:hover {
+        background-color: #432097;
+        color: aliceblue;
+        font-size: 25px;
+        width: 135px;
+        cursor: pointer;
+        /* border: none; */
+        /* border: 75px 2px; */
+        /* broder: 54px 2px; */
+        /* border: 1px solid; */
+        border-radius: 2px 72px;
+        border: none;
+    }
+
+    .input-last input {
+        /* border: 3px solid; */
+        width: 100%;
+        height: 19vh;
+        display: flex;
+        text-align: center;
+        font-family: fangsong;
+    }
+
+    #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .class {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+
+    @media (max-width:1100px) {
+        .about {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .left-about {
+            border-radius: 0px;
+        }
+
+        .center-about {
+            width: 100%;
+            height: 66vh;
+        }
+
+        .right-about {
+            border-radius: 0px;
+            width: 100%;
+        }
+
+        .left-about {
+            width: 100%;
+        }
+
+        .bottom-about2 {
+            margin: 18px 0px;
+            border-radius: 0px;
+        }
+
+        .about-section {
+            height: 190vh;
+        }
+
+        .bottom-about2 p {
+            font-size: 17px;
+        }
+
+        /* .bottom-about2 p{
+            font-size: 25px;
+             display: flex; 
+            flex-wrap: wrap;
+        } */
+        .center-about button {
+            display: none;
+        }
+
+        .bottom-about {
+            display: none;
+        }
+
+        .contact-section {
+            height: 705px;
+        }
+
+        .contact-me-table {
+            margin: 0;
+            width: 65vw;
+        }
+
+        .nav-links li:hover {
+            width: 100%;
+            background-color: black;
+        }
+    }
+
+    @media (max-width:500px) {
+        .about-section {
+            height: 250vh;
+        }
+    }
+
+    @media (max-width:950px) {
+        .header {
+            height: 125%;
+        }
+
+        .about-section {
+            height: 210vh;
+        }
+
+        .bottom-about2 p {
+            font-size: 17px;
+        }
+
+        .bottom-about2 {
+            margin: 120px 0px;
+
+        }
+
+    }
+
+    @media (max-width:650px) {
+        .about-section {
+            height: 230vh;
+        }
+
+        .contact-me-table {
+            margin: 0;
+            width: 70vw;
+        }
+    }
+
+    @media (max-width:881px) {
+        .service-inner {
+            height: 110vh;
+        }
+
+        .pj-inner {
+            height: 105vh;
+        }
+    }
+
+    @media (max-width:588px) {
+        .service-inner {
+            height: 230vh;
+        }
+
+        .project-section {
+            height: 245vh;
+        }
+    }
+
+    @media (max-width:881px) {}
+
+    @media screen and (orientation:landscape) {}
+
+    @media (max-width:450px) {
+        .about-section h1:hover {
+            font-size: 63px;
+            color: white;
+        }
+
+        .bottom-about2 {
+            margin: 20px 0px;
+            padding: 24px;
+        }
+
+        .center-about {
+            height: 45vh;
+        }
+
+        .right-about {
+            font-size: 10px;
+        }
+
+        .about-section h1 {
+            font-size: 50px;
+        }
+
+        .project-section h1 {
+            font-size: 50px;
+        }
+
+        .contact-section h1 {
+            font-size: 50px;
+        }
+    }
+
+    @media (max-height:375px) and (max-width:667px) {
+        .header {
+            height: 245%;
+        }
+
+        .about-section {
+            height: 395vh;
+        }
+
+        .service-inner {
+            height: 245vh;
+        }
+
+        .project-section {
+            height: 330vh;
+        }
+    }
+
+    @media (max-height:896px) and (max-width:414px) {
+        .about-section {
+            height: 185vh;
+        }
+
+    }
+
+    @media (max-height:667px) and (max-width:375px) {
+        .about-section {
+            height: 237vh;
+        }
+
+        .project-section {
+            height: 300vh;
+        }
+
+        .contact-me-table {
+            width: 105vw;
+        }
+
+        .contact-section h1:hover {
+            font-size: 55px;
+            color: white;
+        }
+
+        .header {
+            height: 136%;
+        }
+    }
+
+    @media (max-height:740px) and (max-width:360px) {
+        .about-section {
+            height: 213vh;
+        }
+
+        .project-section {
+            height: 270vh;
+        }
+
+        .contact-me-table {
+            width: 108vw;
+        }
+
+        .left-about p {
+            padding: 14px;
+        }
+    }
+
+    .btn {
+        display: block;
+        width: 87px;
+        height: 88px;
+        border-radius: 68px;
+        background-color: #a963df;
+        color: white;
+        border: 12px solid #7938d4;
+    }
+
+    .btn:hover {
+        background-color: #7938d4;
+        border-color: black;
+        font-size: larger;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn i {
+        font-size: 32px;
+    }
+
+    .map-container {
+        height: 495px;
+        position: relative;
+    }
+
+    .map-container {
+        height: 495px;
+        position: relative;
+      }
+      .map-container iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .last-container{
+        display: flex;
+        width: 100%;
+        /* border: 2px solid; */
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+    .map-container{
+        width: 493px;
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+        /* border: 2px solid; */
+        height: 422px;
+        position: relative;
+    }
+        
